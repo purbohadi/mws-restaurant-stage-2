@@ -2,7 +2,7 @@ FROM node:6.11.2
 
 WORKDIR /api
 
-EXPOSE 1337
+EXPOSE 3001
 
 COPY . /api
 
