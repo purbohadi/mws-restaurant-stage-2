@@ -8,7 +8,7 @@ COPY . /api
 
 #RUN npm install
 
-RUN cd restaurants
+#RUN cd restaurants
 
 RUN npm install -g
 
