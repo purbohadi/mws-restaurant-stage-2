@@ -10,9 +10,9 @@ COPY . /api
 
 #RUN cd restaurants
 
-RUN npm install -g
+RUN npm install
 
-RUN npm install sails -g
+RUN npm install sails
 
 #RUN cd ..
 
