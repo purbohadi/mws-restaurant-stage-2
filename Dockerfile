@@ -12,8 +12,8 @@ COPY . /api
 
 RUN npm install
 
-RUN npm install sails
+RUN npm install sails -g
 
 #RUN cd ..
 
-CMD ["sails", "lift"]
+CMD ["node", "server"]
