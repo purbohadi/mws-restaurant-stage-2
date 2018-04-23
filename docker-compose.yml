@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  api:
+   container_name: api-vlogz-win
+   build: .
+   image: api_nodejs_image
+   restart: always
+   environment:
+     - VIRTUAL_HOST=api.vlogz.win
+     - VIRTUAL_PORT=1337
+     - LETSENCRYPT_HOST=api.vlogz.win
+     - LETSENCRYPT_EMAIL=webmaster@vlogz.win
+
+networks:
+    default:
+       external:
+         name: reverse-proxy
